@@ -1,0 +1,562 @@
+/*============================================== 
+Common CSS
+================================================ */
+
+body{
+    color: #666;
+    font-family: Georgia, sans-serif;
+    font-size: 16px;
+    line-height: 1.5rem;
+    margin: 0;
+}
+.container{
+    margin: 0 auto;
+    max-width: 960px;
+    width: 96%;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+.alignLeft{
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+.alignRight{
+    float: right;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+.alignCenter{
+    display: block;
+    margin: 0 auto 15px
+}
+
+
+
+/*=========================================== 
+Top header CSS
+============================================= */
+.header-area{
+    width: 100%;
+    clear: both;
+}
+#top-header-area{
+    background-color: #ba2e1f;
+    padding: 15px 0;
+    width: 100%;
+}
+.inner-top-header{
+    overflow: hidden;
+}
+.mini-menu{
+    padding-top: 5px;
+    width: 70%;
+    float: left;
+}
+.mini-menu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: left;
+}
+.mini-menu ul li{
+    display: inline-block;
+    position: relative;
+    margin-right: 20px;
+}
+.mini-menu ul li::after{
+    background-color: #fff;
+    content: "";
+    position: absolute;
+    top: 6px;
+    right: -10px;
+    width: 1px;
+    height: 12px;
+}
+.mini-menu ul li:last-child::after{
+    display: none;
+}
+.mini-menu ul li a{
+    display: block;
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+}
+.mini-menu ul li a:hover{
+   color: #ddd;
+}
+.search-area{
+    width: 30%;
+    float: right;
+}
+.search-area form{
+    width: 96%;
+    background-color: #fff;
+    border-radius: 25px;
+    float: right;
+    padding: 2%;
+    max-width: 210px;
+}
+.search-area form input{
+    border: none;
+    width: 75%;
+    padding: 1%;
+    float: left;
+    color: #000;
+}
+.search-area form input[type='submit']{
+    background: url(img/search.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    width: 23%;
+    cursor: pointer;
+}
+
+/*================================== 
+Top header CSS
+==================================== */
+#main-header-area{
+    width: 100%;
+    clear: both;
+}
+.inner-header{
+    padding: 40px 0;
+    overflow: hidden;
+}
+.logo-area{
+    float: left;
+    width: 240px;
+}
+.social-area{
+    padding-top: 20px;
+    float: right;
+    max-width: 600px;
+    width: 100%;
+}
+.social-area ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: right;
+}
+.social-area ul li{
+    display: inline-block;
+    margin-left: 15px;
+}
+.social-area ul li a{
+    display: block;
+    text-decoration: none;
+}
+.social-area ul li a i{
+    background: #333;
+    border-radius: 50%;
+    display: block;
+    text-decoration: none;
+    width: 35px;
+    padding-top: 8px;
+    color: #fff;
+    height: 25px;
+    text-align: center;
+    transition: 0.5s;
+}
+.social-area ul li a:hover  i.linkedin{
+    background: #0072b1;
+}
+.social-area ul li a:hover  i.twetter{
+    background: #1DA1F2;
+}
+.social-area ul li a:hover  i.facebook{
+    background: #4267B2;
+}
+.social-area ul li a:hover  i.google{
+    background: #db4a39;
+}
+.social-area ul li a:hover  i.youtube{
+    background: #FF0000;
+}
+/*================================== 
+MAIN MENU CSS
+==================================== */
+#main-menu{
+    width: 100%;
+    clear: both;
+}
+.inner-menu{
+    background-color: #333;
+    position: relative;
+    min-height: 30px;
+    padding: 15px 0;
+    border-radius: 5px;
+    z-index: 1;
+}
+.inner-menu::after{
+    background-color: #2b2b2b;
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    bottom: 0;
+    left: 0;
+    content: '';
+    z-index: -1;
+}
+#main-menu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+#main-menu ul li{
+    display: inline-block;
+    margin: 0 5px;
+    position: relative;
+}
+#main-menu ul li a{
+    text-decoration: none;
+    color: #fff;
+    
+}
+#main-menu ul li a:hover{
+    color: #ba2e1f;
+}
+#main-menu ul li:hover a{
+    color: #ba2e1f;
+}
+#main-menu ul li:hover ul li a{
+    color: #fff;
+}
+/* dropdown style */
+#main-menu ul ul{
+    position: absolute;
+    background: red;
+    width: 180px;
+    left: -99999px;
+    top: 25px;
+}
+#main-menu ul li:hover ul{
+    left: 0;
+}
+#main-menu ul li:hover ul ul{
+    left: -99999px;
+}
+#main-menu ul ul ul{
+    left: -999999px;
+    top: 0px;
+    
+}
+#main-menu ul li ul li:hover ul{
+    left:180px;
+}
+#main-menu ul ul li{
+    margin: 0;
+    display: block ;
+}
+#main-menu ul ul li:hover{
+    background-color: #333;
+}
+#main-menu ul ul ul{
+    position: absolute;
+    background: red;
+    width: 180px;
+    left: 180px;
+    top: 0;
+}
+
+/*================================== 
+Slider CSS
+==================================== */
+#slider_area{
+    margin-top: 20px;
+}
+.item{
+    position: relative;
+}
+.slider_caption{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.slider_caption h1{
+    color: #fff;
+    font-size: 35px;
+}
+
+/*=========================================== 
+Banner Area CSS
+============================================= */
+#banner_area{
+    background: #fff;
+    margin: 0;
+    padding: 0;
+}
+.inner_banner{
+    overflow: hidden;
+}
+.inner_banner h2{
+    color: #000;
+    font-size: 86px;
+    line-height: 1em;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+.inner_banner p{
+    color: #666666;
+    font-size: 16px;
+    font-weight: normal;
+}
+.inner_banner a{
+    float: right;
+    text-decoration: none;
+    color: #ba2e1f;
+    text-transform: uppercase;
+}
+.inner_banner a:hover{
+    color: #000;
+}
+
+/*=========================================== 
+Banner Area CSS
+============================================= */
+
+#work_area{
+    background: #f2f2f2;
+    padding: 45px 0;
+
+}
+.inner_work{
+    overflow: hidden;
+}
+.child_work{
+    width: 32%;
+    float: left;
+    margin: 0 1% 10px;
+}
+.child_work h2{
+    color: #333;
+    font-size: 26px;
+    font-weight: normal;
+}
+.child_work p{
+    color: #878787;
+    font-size: 14px;
+}
+.child_work a{
+    color: #b92d1f;
+    font-size: 14px;
+    font-weight: normal;
+    text-decoration: none;
+    clear: both;
+    display: inline-block;
+    clear: both;
+    float: right;
+}
+.child_work a:hover{
+    color: #262626;
+}
+.about_area{
+    margin-left: 0;
+}
+.about_area img{
+    border: 1px solid #dfdfdf;
+    padding: 5px;
+    display: block;
+    margin-bottom: 15px;
+}
+.service_area{
+
+}
+.child_service{
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+.child_service .service_image{
+    width: 25%;
+    float: left;
+    
+}
+.child_service .service_text{
+    width: 75%;
+    float: right;
+
+}
+.child_service .service_text h3{
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.child_service .service_text p{
+    margin-top: 0;
+    line-height: 1.4em;
+}
+.testimonial_area{
+    margin-right: 0;
+}
+.child_testimonial{
+    width: 100%;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+.child_testimonial h3{
+    background-image: url(img/comment.png);
+    background-repeat: no-repeat;
+    color: #989898;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 15px 0 15px 65px;
+}
+.child_testimonial h3 span{
+    font-weight: normal;
+}
+
+/*=========================================== 
+Footer Area CSS
+============================================= */
+
+#footer_area{
+    background: #fff;
+    padding: 45px 0;
+}
+.inner_footer{
+    overflow: hidden;
+}
+.child_footer{
+    padding: 1%;
+    margin: 0 1% 10px;
+    width: 21%;
+    float: left;
+}
+.child_footer h3{
+   border-top: 1px solid #666;
+   color: #666;
+   font-size: 16px;
+   text-transform: uppercase;
+   margin-top: 0;
+   padding-top: 5px;
+}
+.child_footer h4{
+   color: #666;
+   font-size: 14px;
+   margin-top: 0;
+}
+.child_footer h4 a{
+    color: #666;
+    text-decoration: none;
+    float: none;
+    margin-bottom: 5px;
+}
+.child_footer h4 a:hover{
+    color: #b92d1f;
+}
+.child_footer h6{
+   margin: 0 0 10px;
+   font-size: 12px;
+   line-height: 1.3em;
+}
+.child_footer p{
+   color: #666;
+   font-size: 14px;
+   margin-top: 0;
+}
+.child_footer p a{
+   color: #b92d1f;
+   text-decoration: none;
+}
+.child_blog {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.child_blog a{
+    color: #b92d1f;
+    float: right;
+    text-decoration: none;
+}
+.child_blog a:hover{
+    color: #666666;
+}
+
+.child_footer p a:hover{
+   
+}
+.child_footer ul{
+   margin: 0;
+   padding: 0;
+   list-style: none;
+}
+.child_footer ul ul{
+   display: none;
+}
+.child_footer ul li{
+    background: url(img/next.png) no-repeat center left;
+   display: block;
+   border-bottom: 1px solid #666666;
+   padding-left: 15px;
+   padding-bottom: 8px;
+}
+.child_footer ul li:last-child{
+   border: none
+ }
+.child_footer ul li a{
+   color: #666;
+   font-size: 14px;
+   text-decoration: none;
+}
+.child_footer ul li a:hover{
+   color: #b92d1f;
+}
+.child_footer input{
+   background: #e4e1e1;
+   border: none;
+   border-radius: 5px;
+   padding: 10px 2%;
+   margin-bottom: 10px;
+   width: 96%;
+}
+.child_footer textarea{
+    background: #e4e1e1;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 5%;
+    margin-bottom: 10px;
+    width: 90%;
+}
+.child_footer input[type="submit"]{
+    width: 80px;
+    color: #b92d1f;
+    cursor: pointer;
+}
+.child_footer input[type="submit"]:hover{
+   background-color: #b92d1f;
+   color: #fff;
+}
+
+
+/*=========================================== 
+Copy Right Area CSS
+============================================= */
+
+#copyright_area{
+    background-color: #eeeeee;
+    padding: 20px 0;
+}
+.inner_copyright{
+    overflow: hidden;
+}
+.inner_copyright p{
+    color: #919191;
+    font-size: 12px;
+}
+.left_copyright{
+    float: left;
+    width: 60%;
+}
+.right_copyright{
+    float: right;
+    text-align: right;
+    width: 40%;
+}
