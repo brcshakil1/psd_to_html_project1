@@ -26,8 +26,21 @@
     .mini-menu {
       width: 100%;
     }
+    .search-area {
+      width: 250px;
+      float: none;
+      margin: 0 auto;
+    }
     .mini-menu ul {
       padding-bottom: 15px;
+      text-align: center;
+    }
+    .logo-area {
+      float: none;
+      width: 240px;
+      margin: 0 auto;
+    }
+    .social-area ul {
       text-align: center;
     }
     .inner_banner h2 {
